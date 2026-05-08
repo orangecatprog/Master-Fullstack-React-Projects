@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <script>
-        var path = window.location.pathname.replace('/Master-Fullstack-React-Projects', '') || '/';
+        var path = window.location.pathname.replace('/Master-Fullstack-React-Projects', '').replace(/\/+$/, '') || '/';
         sessionStorage.setItem('gh-pages-redirect', path);
         window.location.replace('/Master-Fullstack-React-Projects/');
     </script>

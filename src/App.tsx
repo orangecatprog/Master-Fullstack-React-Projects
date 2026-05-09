@@ -11,7 +11,7 @@ function App() {
         return window.location.pathname.replace(
             /\/activity_(\d{2})/,
             (_, num) =>
-                "activity_" + disallow(Number(num) + count).toString().padStart(2, "0"),
+                "/activity_" + disallow(Number(num) + count).toString().padStart(2, "0"),
         );
     };
 

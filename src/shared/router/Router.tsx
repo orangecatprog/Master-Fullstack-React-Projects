@@ -10,7 +10,7 @@ import Activity08 from "../../activity-08/Activity08";
 import Activity09 from "../../activity-09/Activity09";
 export default function AppRouter() {
     return (
-        <Router>
+        <Router basename="/Master-Fullstack-React-Projects">
             <Routes>
                 <Route path="/" element={<Navigate to="/activity_01" />} />
                 <Route path="/activity_01" element={<Activity01 />} />
